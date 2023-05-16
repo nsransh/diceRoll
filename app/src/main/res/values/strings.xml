@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kotlin-Basic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="happy_birthday_text">Happy Birthday, Sam!</string>
+    <string name="signature_text">From Rani.</string>
+</resources>
