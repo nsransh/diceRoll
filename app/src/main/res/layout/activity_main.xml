@@ -8,12 +8,12 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView2"
-        android:name="com.example.kotlin_basic.ui.BirthdayCardFragment"
+        android:name="com.example.kotlin_basic.ui.DiceRollFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_birthday_card" />
+        tools:layout="@layout/fragment_dice_roll" />
 </androidx.constraintlayout.widget.ConstraintLayout>
