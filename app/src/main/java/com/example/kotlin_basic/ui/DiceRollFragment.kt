@@ -37,14 +37,18 @@ class DiceRollFragment : Fragment() {
     }
 
     private fun rollDice() {
-        val diceRoll = diceRoll(6)
+        val dice = Dice(6)
+        val diceRoll = dice.roll()
         Log.e("diceroll", diceRoll.toString())
 
-        binding.tvRoll.text = diceRoll.toString()
-    }
-
-    fun diceRoll(numSides: Int): Int {
-        return (1..numSides).random()
+        when(diceRoll){
+            1 -> binding.ivDice.setImageResource(R.drawable.dice_1)
+            2 -> binding.ivDice.setImageResource(R.drawable.dice_2)
+            3 -> binding.ivDice.setImageResource(R.drawable.dice_3)
+            4 -> binding.ivDice.setImageResource(R.drawable.dice_4)
+            5 -> binding.ivDice.setImageResource(R.drawable.dice_5)
+            6 -> binding.ivDice.setImageResource(R.drawable.dice_6)
+        }
     }
 
 
@@ -52,5 +56,10 @@ class DiceRollFragment : Fragment() {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             DiceRollFragment()
+    }
+}
+class Dice(private val numSides: Int) {
+    fun roll(): Int {
+        return (1..numSides).random()
     }
 }
